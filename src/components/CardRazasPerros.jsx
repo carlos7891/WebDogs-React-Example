@@ -1,9 +1,13 @@
+import {Link} from "react-router-dom";
+
 function CardRazasPerros(props){
     return(
         <li>
-            <div className="contentimg">
-                <img src={props.imagen} alt={props.nombreRaza}/>
-            </div>
+            <Link to='/BorderCollieInfoPage'>
+                <div className="contentimg">
+                    <img src={props.imagen} alt={props.nombreRaza}/>
+                </div>
+            </Link>
             <span className="CardTitle">{props.nombreRaza}</span>
             <div className="Cardfooter">
                 <i className="fab fa-gratipay"> {props.megusta}</i>
