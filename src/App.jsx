@@ -7,7 +7,11 @@ import {
   } from "react-router-dom";
 import BorderCollieInfoPage from 'pages/borderCollie';
 import Pastoraleman from 'pages/Pastoraleman';
+import Cavalierking from 'pages/Cavalierking';
+import Bulldogs from 'pages/Bulldogs';
 import Layout from 'layouts/Layout';
+import Goldenretriver from 'pages/Goldenretriver';
+
 
 function App() {
   return (
@@ -20,6 +24,15 @@ function App() {
                   </Route>
                   <Route path='/Pastoraleman'>
                       <Pastoraleman />
+                  </Route>
+                  <Route path='/Goldenretriver'>
+                      <Goldenretriver />
+                  </Route>
+                  <Route path='/Cavalierking'>
+                      <Cavalierking />
+                  </Route>
+                  <Route path='/Bulldogs'>
+                      <Bulldogs />
                   </Route>
                   <Route path=''>
                       <Index />
