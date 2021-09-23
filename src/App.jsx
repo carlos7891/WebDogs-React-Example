@@ -1,10 +1,11 @@
-import './styles/App.css';
-import borderCollie from './media/border-collie.jpeg'
-import pastorAleman from './media/pastor-aleman2.jpg'
-import goldenRetriver from './media/golden-retreiver.jpg'
-import CavalierKing from './media/Cavalier-king.jpg'
-import bulldog from './media/bulldog.jpg'
-import logos from './media/WebDog2.png'
+import 'styles/App.css';
+import borderCollie from 'media/border-collie.jpeg'
+import pastorAleman from 'media/pastor-aleman2.jpg'
+import goldenRetriver from 'media/golden-retreiver.jpg'
+import CavalierKing from 'media/Cavalier-king.jpg'
+import bulldog from 'media/bulldog.jpg'
+import logos from 'media/WebDog2.png'
+import CardRazasPerros from 'components/CardRazasPerros';
 
 function App() {
   return (
@@ -42,30 +43,12 @@ function App() {
                     <CardRazasPerros nombreRaza='Bulldog' imagen={bulldog} megusta='7503' comentario='38'/>
                 </ul>
             </section>
-            <section>
-
-            </section>
         </main>
         <footer>
-
-    </footer>
+        </footer>
     </div>
   );
 }
 
-function CardRazasPerros(props){
-    return(
-        <li>
-            <div className="contentimg">
-                <img src={props.imagen} alt={props.nombreRaza}/>
-            </div>
-            <span className="CardTitle">{props.nombreRaza}</span>
-            <div className="Cardfooter">
-                <i className="fab fa-gratipay"> {props.megusta}</i>
-                <i className="far fa-comment"> {props.comentario}</i>
-                <i className="far fa-share-square"></i>
-            </div>
-        </li>
-    );
-}
+
 export default App;
