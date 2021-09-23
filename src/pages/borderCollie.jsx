@@ -1,7 +1,7 @@
 
 function BorderCollieInfoPage(){
-    return <div>
-        Esta es la pagina del border
-    </div>
+    return (
+            <div>Informacion sobre el Border Collie</div>
+    );
 }
 export default BorderCollieInfoPage

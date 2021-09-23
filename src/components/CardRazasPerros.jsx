@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 function CardRazasPerros(props){
     return(
         <li>
-            <Link to='/BorderCollieInfoPage'>
+            <Link to={props.linkstopage}>
                 <div className="contentimg">
                     <img src={props.imagen} alt={props.nombreRaza}/>
                 </div>
